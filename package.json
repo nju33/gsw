@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "example"
+  ],
+  "author": "nju33 <nju33.ki@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    ".docs": "lerna exec --scope gsw -- yarn typedoc",
+    "pre.publish": "cp packages/gsw/README.md README.md",
+    ".publish": "lerna publish",
+    ".test": "lerna exec -- yarn test",
+    "example.deploy": "lerna exec --scope example -- yarn deploy"
+  },
+  "devDependencies": {
+    "@nju33/tslint": "^0.0.5",
+    "@types/jest": "23.3.11",
+    "jest": "23.6.0",
+    "lerna": "3.8.5",
+    "prettier": "1.15.3",
+    "renovate-config-nju33": "0.0.1",
+    "tslint": "5.12.0",
+    "typescript": "3.2.2"
+  }
+}

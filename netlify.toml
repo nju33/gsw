@@ -1,0 +1,3 @@
+[context.docs]
+  publish = 'packages/vwxy/docs'
+  command = 'yarn .docs'
