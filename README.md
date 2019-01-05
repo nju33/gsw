@@ -1,6 +1,6 @@
 # gsw
 
-A to get function.
+get, set, watch
 
 [![github](https://badgen.net/badge//nju33,gsw/000?icon=github&list=1)](https://github.com/nju33/gsw)
 [![npm:version](https://badgen.net/npm/v/gsw?icon=npm&label=)](https://www.npmjs.com/package/gsw)
@@ -59,4 +59,4 @@ value('baz', true);
 // newValue: true, oldValue: false
 ```
 
-[![Edit example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vyzyjyl283?module=%2Fsrc%2Findex.ts)
+[![Edit gsw](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wn2myjq6lw?module=%2Fsrc%2Findex.ts)

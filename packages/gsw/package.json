@@ -16,7 +16,8 @@
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepare": "yarn build",
+    "readme.copy-root": "cp README.md ../../README.md",
+    "prepare": "yarn build && yarn readme.copy-root",
     "test": "jest",
     "typedoc": "typedoc --theme minimal --out docs src/index.ts --ignoreCompilerErrors",
     "build.main": "tsc -P tsconfig.main.json",
