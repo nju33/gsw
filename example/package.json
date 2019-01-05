@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "example",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a gsw example",
   "main": "index.html",
   "pkg-state": {
@@ -21,7 +21,7 @@
     "postdeploy": "pkg-state postdeploy"
   },
   "dependencies": {
-    "gsw": "^0.0.0"
+    "gsw": "^0.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
