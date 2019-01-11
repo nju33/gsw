@@ -1280,11 +1280,6 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nju33/tsconfig-base@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.5.tgz#b486c25667b3a3329e2a1040fab185ebfc99c2f3"
-  integrity sha512-hL5ioobDmguNE8hB8BoTlf7BYot+/AQ/aPd/kbSxcOQdu3u8AxBuxo04194BjUUsMfni/XJDV2k4jULa0Nibog==
-
 "@nju33/tsconfig-base@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.6.tgz#f7343bf66d40d72bd84a818589efac13e640829b"
@@ -1297,19 +1292,19 @@
   dependencies:
     "@nju33/tsconfig-base" "^0.0.6"
 
-"@nju33/tsconfig-module@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.5.tgz#7315e63dd62acc855f7ad58ea73a32339e0bce52"
-  integrity sha512-bJOBXbBc6bXv21xJa6t+q/M5XT7pwJWDiZLBAP8stnCm5usLn+qsJvhkpQkcCO0+eWUPD3JjALhj3Fa/DWtaAQ==
+"@nju33/tsconfig-module@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.6.tgz#ee9dc826a9258756c5c7969068ae53db11bc03eb"
+  integrity sha512-kW2JubKdO8YtN2TaRdBbVPzRNHEffrTBuwz8jXiEdIQ3ngBcwRf1Q77Pk49mM2LvnPN+8Xy8GL+jXxnV/cwYXw==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.5"
+    "@nju33/tsconfig-base" "^0.0.6"
 
-"@nju33/tsconfig-types@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.5.tgz#35dc788bb002c6071055848774d9bc4184855ecd"
-  integrity sha512-Yu/whFZc3mQOUd25SKxNvYocN0bPK6++bXYIvRV3c2ASjwyc3m5R8zoMt+4oec2+o7U8DYKtadfUvgoAl6nH5A==
+"@nju33/tsconfig-types@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.6.tgz#e2b85ef8806a7d9339bf2f024563bd6c8640f34b"
+  integrity sha512-KnEUOFn3TMrQLXGSzCgRvI/zmGf/f6NZ8XtRXtN1tnYQ/141/xy8CyWcLOl5oGlK65UjAKrpeS30JNXbUe50SA==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.5"
+    "@nju33/tsconfig-base" "^0.0.6"
 
 "@nju33/tslint@0.0.6":
   version "0.0.6"
@@ -1401,10 +1396,10 @@
   resolved "https://registry.yarnpkg.com/@types/highlight.js/-/highlight.js-9.12.3.tgz#b672cfaac25cbbc634a0fd92c515f66faa18dbca"
   integrity sha512-pGF/zvYOACZ/gLGWdQH8zSwteQS1epp68yRcVLJMgUck/MjEn/FBYmPub9pXT8C1e4a8YZfHo1CKyV8q1vKUnQ==
 
-"@types/jest@23.3.11":
-  version "23.3.11"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.11.tgz#d3a936ae753d9e484965f5cbd19027c2b8af2551"
-  integrity sha512-eroF85PoG87XjCwzxey7yBsQNkIY/TV5myKKSG/022A0FW25afdu/uub6JDMS5eT68zBBt82S+w/MFOTjeLM3Q==
+"@types/jest@23.3.12":
+  version "23.3.12"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.12.tgz#7e0ced251fa94c3bc2d1023d4b84b2992fa06376"
+  integrity sha512-/kQvbVzdEpOq4tEWT79yAHSM4nH4xMlhJv2GrLVQt4Qmo8yYsPdioBM1QpN/2GX1wkfMnyXvdoftvLUr0LBj7Q==
 
 "@types/lodash@^4.14.110":
   version "4.14.119"
