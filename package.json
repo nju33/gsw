@@ -17,7 +17,7 @@
     "@nju33/tslint": "0.0.6",
     "@types/jest": "23.3.11",
     "jest": "23.6.0",
-    "lerna": "3.8.5",
+    "lerna": "3.10.5",
     "prettier": "1.15.3",
     "renovate-config-nju33": "0.0.1",
     "tslint": "5.12.0",
