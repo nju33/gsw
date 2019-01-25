@@ -34,7 +34,7 @@
     "@types/jest": "23.3.13",
     "jest": "23.6.0",
     "lerna": "3.10.7",
-    "prettier": "1.16.0",
+    "prettier": "1.16.1",
     "renovate-config-nju33": "0.0.1",
     "rollup": "1.1.1",
     "ts-jest": "23.10.5",
