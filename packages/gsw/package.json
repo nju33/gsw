@@ -31,7 +31,7 @@
     "@nju33/tsconfig-main": "0.0.6",
     "@nju33/tsconfig-module": "0.0.6",
     "@nju33/tsconfig-types": "0.0.6",
-    "@types/jest": "23.3.13",
+    "@types/jest": "23.3.14",
     "jest": "23.6.0",
     "lerna": "3.10.8",
     "prettier": "1.16.4",
