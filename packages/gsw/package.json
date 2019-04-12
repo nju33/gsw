@@ -33,7 +33,7 @@
     "@nju33/tsconfig-types": "0.0.7",
     "@types/jest": "23.3.14",
     "jest": "23.6.0",
-    "lerna": "3.13.1",
+    "lerna": "3.13.2",
     "prettier": "1.16.4",
     "renovate-config-nju33": "0.0.1",
     "rollup": "1.9.0",
