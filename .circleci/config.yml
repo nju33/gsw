@@ -15,6 +15,12 @@ refs:
     add_ssh_keys:
       fingerprints:
         - '53:b5:a8:73:73:ed:38:8b:62:d3:39:db:49:1c:94:1e'
+  git_init: &git_init
+    run:
+      name: Git init
+      command: |
+        git config --global user.email "$GIT_AUTHOR_EMAIL"
+        git config --global user.name "$GIT_AUTHOR_NAME"
 
 jobs:
   test:
@@ -37,12 +43,20 @@ jobs:
       - run: yarn
       - *save_cache
       - *add_github_ssh_keys
-      - run:
-          name: update docs
-          command: |
-            git config --global user.email "$GIT_AUTHOR_EMAIL"
-            git config --global user.name "$GIT_AUTHOR_NAME"
-            git push origin master:docs
+      - *git_init
+      - run: git push origin master:docs
+  update_example:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - *restore_cache
+      - run: yarn
+      - *save_cache
+      - *add_github_ssh_keys
+      - *git_init
+      - run: yarn branch.update:codesandbox
 
 workflows:
   version: 2
@@ -59,3 +73,11 @@ workflows:
           filters:
             branches:
               only: master
+      - update_example:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /v[0-9]+\.[0-9]+\.[0-9]+
+            branches:
+              ignore: /.*/

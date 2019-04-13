@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "docs": "lerna exec --scope gsw -- yarn typedoc",
-    "prepublish": "cp packages/gsw/README.md README.md",
-    "publish": "lerna publish && yarn branch.update:codesandbox",
+    "publish": "lerna publish",
     "branch.update:codesandbox": "gh-pages --dist example --branch codesandbox --dotfiles",
     "test": "lerna exec -- yarn test"
   },
