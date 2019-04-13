@@ -1,3 +1,6 @@
+.cache
+dist
+
 ### https://raw.github.com/github/gitignore/982268df04842c9b34b7bdb0c4b0696b7db6e6fd/Global/macOS.gitignore
 
 # General
