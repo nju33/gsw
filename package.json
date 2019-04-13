@@ -9,9 +9,9 @@
   "scripts": {
     "docs": "lerna exec --scope gsw -- yarn typedoc",
     "prepublish": "cp packages/gsw/README.md README.md",
-    "publish": "lerna publish",
-    "test": "lerna exec -- yarn test",
-    "example.deploy": "lerna exec --scope example -- yarn deploy"
+    "publish": "lerna publish && yarn branch.update:codesandbox",
+    "branch.update:codesandbox": "gh-pages --dist example --branch codesandbox --dotfiles",
+    "test": "lerna exec -- yarn test"
   },
   "devDependencies": {
     "@nju33/tslint": "0.0.7",

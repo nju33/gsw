@@ -60,4 +60,4 @@ value('baz', true);
 // newValue: true, oldValue: false
 ```
 
-[![Edit gsw](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wn2myjq6lw?module=%2Fsrc%2Findex.ts)
+[![Edit @gsw/example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/nju33/gsw/tree/codesandbox/?fontsize=14)
