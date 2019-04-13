@@ -48,7 +48,11 @@ workflows:
   version: 2
   default:
     jobs:
-      - test
+      - test:
+          filters:
+            branchs:
+              ignore:
+                - codesandbox
       - update_docs:
           requires:
             - test
