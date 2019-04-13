@@ -1,0 +1,7 @@
+version: 2
+jobs:
+  do_nothing:
+    docker:
+      - image: alpine
+    steps:
+      - run: ':'
