@@ -1,6 +1,6 @@
 {
   "name": "gsw",
-  "description": "get, set, watch",
+  "description": "To get, set and watch",
   "version": "0.0.7",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",

@@ -6,6 +6,23 @@
   ],
   "author": "nju33 <nju33.ki@gmail.com>",
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,ts}": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.{html,md,yml,json}": [
+        "prettier --write",
+        "git add"
+      ]
+    }
+  },
   "scripts": {
     "docs": "lerna exec --scope gsw -- yarn typedoc",
     "publish": "lerna publish",
