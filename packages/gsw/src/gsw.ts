@@ -17,7 +17,7 @@ export const gsw = <T extends {[x: string]: any} = {}>(
   const keys = Object.keys(object);
 
   /**
-   * the listener register object
+   * The listener register object
    */
   const listener: GswListener<T> = keys.reduce(
     (result, key) => {
@@ -42,7 +42,7 @@ export const gsw = <T extends {[x: string]: any} = {}>(
     }
 
     if (val !== undefined) {
-      // listener fires only when `val` is really new value
+      // Listener fires only when `val` is really new value
       if (val !== object[prop]) {
         const listeners = listener[prop];
         listeners.forEach(aListener => {
@@ -50,6 +50,7 @@ export const gsw = <T extends {[x: string]: any} = {}>(
         });
         object[prop] = val;
       }
+
       return;
     }
 

@@ -6,19 +6,19 @@ const value = gsw({
   baz: true,
 });
 
-// get
+// Get
 expect(value('foo')).toBe('str');
 
-// set
+// Set
 value('bar', 456);
 expect(value('bar')).toBe(456);
 
-// listener
+// Listener
 value('baz', (newValue, oldValue) => {
   console.log(`newValue: ${newValue}, oldValue: ${oldValue}`);
 });
 value('baz', false);
-// newValue: false, oldValue: true
+// NewValue: false, oldValue: true
 value('baz', false);
 value('baz', true);
-// newValue: true, oldValue: false
+// NewValue: true, oldValue: false
