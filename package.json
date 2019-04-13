@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@gsw/example",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "a gsw example",
   "main": "index.html",
   "pkg-state": {
@@ -17,7 +17,7 @@
     "start": "parcel index.html --open"
   },
   "dependencies": {
-    "gsw": "^0.0.3"
+    "gsw": "^0.0.6"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",

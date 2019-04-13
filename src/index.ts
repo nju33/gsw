@@ -6,13 +6,13 @@ import gsw from 'gsw';
 const Label = {
   Get: '[Get]',
   Set: '[Set]',
-  Watch: '[Watch]'
+  Watch: '[Watch]',
 };
 
 const value = gsw({
   foo: 'str',
   bar: 123,
-  baz: true
+  baz: true,
 });
 
 console.log("%s value('foo') === %s", Label.Get, value('foo'));
@@ -30,7 +30,7 @@ value('baz', (newValue, oldValue) => {
 	console.log(\`newValue: \${newValue}, oldValue: \${oldValue}\`);
 });
 `.trim(),
-  Label.Watch
+  Label.Watch,
 );
 value('baz', (newValue, oldValue) => {
   console.log(`newValue: ${newValue}, oldValue: ${oldValue}`);
