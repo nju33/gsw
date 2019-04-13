@@ -18,7 +18,8 @@
   "scripts": {
     "readme.copy-root": "cp README.md ../../README.md",
     "prepare": "yarn build && yarn readme.copy-root",
-    "test": "jest",
+    "test": "if [ \"$CI\" = \"true\" ]; then jest --coverage; else jest; fi",
+    "posttest": "if [ \"$CI\" = \"true\" ]; then cat ./coverage/lcov.info | ./node_modules/.bin/coveralls; fi",
     "typedoc": "typedoc --theme minimal --out docs src/index.ts --ignoreCompilerErrors",
     "build.main": "tsc -P tsconfig.main.json",
     "build.module": "tsc -P tsconfig.module.json",
@@ -32,6 +33,7 @@
     "@nju33/tsconfig-module": "0.0.7",
     "@nju33/tsconfig-types": "0.0.7",
     "@types/jest": "23.3.14",
+    "coveralls": "^3.0.3",
     "jest": "23.6.0",
     "lerna": "3.13.2",
     "prettier": "1.17.0",

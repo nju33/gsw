@@ -4,8 +4,9 @@ get, set, watch
 
 [![github](https://badgen.net/badge//nju33,gsw/000?icon=github&list=1)](https://github.com/nju33/gsw)
 [![npm:version](https://badgen.net/npm/v/gsw?icon=npm&label=)](https://www.npmjs.com/package/gsw)
-[![typescript](https://badgen.net/badge/lang/typescript/0376c6?icon=npm)](https://www.typescriptlang.org/)
+[![typescript](https://badgen.net/badge/lang/typescript/0376c6)](https://www.typescriptlang.org/)
 [![ci:status](https://badgen.net/circleci/github/nju33/gsw)](https://circleci.com/gh/nju33/gsw)
+[![Coverage Status](https://coveralls.io/repos/github/nju33/gsw/badge.svg?branch=master)](https://coveralls.io/github/nju33/gsw?branch=master)
 [![document:typedoc](https://badgen.net/badge/document/typedoc/9602ff)](https://docs--gsw.netlify.com/)
 [![license](https://badgen.net/npm/license/gsw)](https://github.com/nju33/gsw/blob/master/LICENSE)
 [![browserslist](https://badgen.net/badge/browserslist/chrome,edge/ffd539?list=1)](https://browserl.ist/?q=last+1+chrome+version%2C+last+1+edge+version)

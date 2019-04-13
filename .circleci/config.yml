@@ -1,18 +1,57 @@
 version: 2
+
+refs:
+  restore_cache: &restore_cache
+    restore_cache:
+      keys:
+        - v1-dependencies-{{ checksum "package.json" }}
+        - v1-dependencies-
+  save_cache: &save_cache
+    save_cache:
+      paths:
+        - node_modules
+      key: v1-dependencies-{{ checksum "package.json" }}
+  add_github_ssh_keys: &add_github_ssh_keys
+    add_ssh_keys:
+      fingerprints:
+        - '53:b5:a8:73:73:ed:38:8b:62:d3:39:db:49:1c:94:1e'
+
 jobs:
-  build:
+  test:
     docker:
       - image: circleci/node:10
     working_directory: ~/repo
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
-      - run: yarn 
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn .test
+      - *restore_cache
+      - run: yarn
+      - *save_cache
+      - run: yarn test
+  update_docs:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - *restore_cache
+      - run: yarn
+      - *save_cache
+      - *add_github_ssh_keys
+      - run:
+          name: update docs
+          command: |
+            git config --global user.email "$GIT_AUTHOR_EMAIL"
+            git config --global user.name "$GIT_AUTHOR_NAME"
+            git push origin master:docs
+
+workflows:
+  version: 2
+  default:
+    jobs:
+      - test
+      - update_docs:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
