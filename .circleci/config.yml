@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  do_nothing:
+  build:
     docker:
       - image: alpine
     steps:
