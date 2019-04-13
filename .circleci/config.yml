@@ -44,7 +44,7 @@ jobs:
       - *save_cache
       - *add_github_ssh_keys
       - *git_init
-      - run: git push origin master:docs
+      - run: git push origin master:docs -f
   update_example:
     docker:
       - image: circleci/node:10
