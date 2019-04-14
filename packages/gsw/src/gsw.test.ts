@@ -7,26 +7,28 @@ interface AObject {
 }
 
 let value: GswHandler<AObject>;
-beforeEach(() => {
-  const aObject: AObject = {
-    foo: 'str',
-    bar: 123,
-    baz: true,
-  };
+beforeEach(
+  (): void => {
+    const aObject: AObject = {
+      foo: 'str',
+      bar: 123,
+      baz: true,
+    };
 
-  value = gsw(aObject);
-});
+    value = gsw(aObject);
+  },
+);
 
-test('get', () => {
+test('get', (): void => {
   expect(value('foo')).toBe('str');
 });
 
-test('set', () => {
+test('set', (): void => {
   value('bar', 456);
   expect(value('bar')).toBe(456);
 });
 
-test('watch', () => {
+test('watch', (): void => {
   const fakeListener = jest.fn();
   value('baz', fakeListener);
   value('baz', false);

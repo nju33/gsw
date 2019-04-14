@@ -32,9 +32,12 @@ value('baz', (newValue, oldValue) => {
 `.trim(),
   Label.Watch,
 );
-value('baz', (newValue, oldValue) => {
-  console.log(`newValue: ${newValue}, oldValue: ${oldValue}`);
-});
+value(
+  'baz',
+  (newValue, oldValue): void => {
+    console.log(`newValue: ${newValue}, oldValue: ${oldValue}`);
+  },
+);
 console.log("%s value('baz', false)", Label.Set);
 value('baz', false);
 // NewValue: false, oldValue: true

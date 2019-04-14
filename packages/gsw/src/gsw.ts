@@ -1,30 +1,34 @@
 export type GswListenerFunction<V> = (newValue: V, oldValue: V) => void;
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+export interface GswDictionary {
+  [x: string]: any;
+}
+/* eslint-enable @typescript-eslint/no-explicit-any */
+
 export type GswListener<
-  T extends {[x: string]: any},
+  T extends GswDictionary,
   P extends keyof T = keyof T
 > = Record<keyof T, GswListenerFunction<T[P]>[]>;
 
-export interface GswHandler<T extends {[x: string]: any}> {
+export interface GswHandler<T extends GswDictionary> {
   <P extends keyof T>(prop: P, val: GswListenerFunction<T[P]>): void;
   <P extends keyof T>(prop: P, val: T[P]): void;
   <P extends keyof T>(prop: P): T[P];
 }
 
-export const gsw = <T extends {[x: string]: any} = {}>(
-  object: T,
-): GswHandler<T> => {
+export const gsw = <T extends GswDictionary = {}>(object: T): GswHandler<T> => {
   const keys = Object.keys(object);
 
   /**
    * The listener register object
    */
   const listener: GswListener<T> = keys.reduce(
-    (result, key) => {
+    (result, key): GswListener<T> => {
       result[key] = [];
       return result;
     },
-    {} as GswListener<T>,
+    ({} as unknown) as GswListener<T>,
   );
 
   /**
@@ -35,7 +39,7 @@ export const gsw = <T extends {[x: string]: any} = {}>(
    * a('foo', 123) // set
    * a('foo', (newValue, oldValue) => {}) // watch
    */
-  return <P extends keyof T>(prop: P, val?: T[P]) => {
+  return <P extends keyof T>(prop: P, val?: T[P]): undefined | unknown => {
     if (typeof val === 'function') {
       listener[prop].push(val);
       return;
@@ -45,9 +49,11 @@ export const gsw = <T extends {[x: string]: any} = {}>(
       // Listener fires only when `val` is really new value
       if (val !== object[prop]) {
         const listeners = listener[prop];
-        listeners.forEach(aListener => {
-          aListener(val, object[prop]);
-        });
+        listeners.forEach(
+          (aListener: GswListenerFunction<T[P]>): void => {
+            aListener(val, object[prop]);
+          },
+        );
         object[prop] = val;
       }
 
