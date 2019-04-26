@@ -1492,41 +1492,41 @@
   resolved "https://registry.yarnpkg.com/@nju33/prettier/-/prettier-0.0.7.tgz#d8f31fe1a4e774aa3c7b51a80cd1c2fa91224dd9"
   integrity sha512-t6geeZTQvbe150R9FZm9g6OCB5ay1toWzDdYV0WbZA9t3mEjlb4CpBLnUZoF5DScF+B5C7Qp1i6acjbgmWay7w==
 
-"@nju33/tsconfig-base@^0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.11.tgz#01e0a7a7cd5fdf726e3df6bdaf5375da05ff2e61"
-  integrity sha512-NnSBvw5L9ykyuBpfVrOkSRPf8wcUUqXhIuq+g2CuNnok/ty4foRzelUDOKM00XOpQbDURQd/kqYmlOo8Ue8JYA==
-
 "@nju33/tsconfig-base@^0.0.18":
   version "0.0.18"
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.18.tgz#eaea7677f42906d21756068ca2efc52675740e71"
   integrity sha512-aaXVs7cBFFJ0zPcfiyncqVTVCjMM6LZ54lw1SwWRakjUhU7nam5HhqrRQOXnIzosVq1wa07vjvCEZ19NsL2u7w==
 
-"@nju33/tsconfig-main@0.0.18":
+"@nju33/tsconfig-base@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.24.tgz#346529f75e1612bdc77ff24db9a058ea3701a732"
+  integrity sha512-BvbAJcXz/Pn9N3/CenLvsoZ/HFTrqaK4G6H8/76CZiHnrMAHC4XyuIkNRBd2TwZIepmETIq41EDMGV5REkaZ7Q==
+
+"@nju33/tsconfig-main@0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-main/-/tsconfig-main-0.0.24.tgz#d373ed1c547af3d5cef89621e3f5219947759fbd"
+  integrity sha512-Wn9efIZCiWqVROcFCKoDkuvsFNON2wHHtsQNS2AR4cbN2EP2L44326+QplnV5DBSZX/786hk/PgxV60JDTixWA==
+  dependencies:
+    "@nju33/tsconfig-base" "^0.0.24"
+
+"@nju33/tsconfig-module@0.0.18":
   version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-main/-/tsconfig-main-0.0.18.tgz#af604a57757791e6addf138a44c3c033d52e721e"
-  integrity sha512-K7lTgpYpnvMCCkCpu/CyY3vauxLIEV0YTHujekuLuDE1iNbAhPEwa59Tz6ZbRpZ+s4dMXohozJmvDlarj31qeQ==
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.18.tgz#a02c1a38bc6d0c21584e7d1ff43bfe68c807f000"
+  integrity sha512-hCLZzm9Vj2IWAaDjInGRkWvcGdGjR9NKEKEUI+rBEUvifroJApv9N17fqS2R94zAcMFPHPYz+Osd4/lKqRN6Cg==
   dependencies:
     "@nju33/tsconfig-base" "^0.0.18"
 
-"@nju33/tsconfig-module@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.11.tgz#dab85af4bf6d4f5c2d66ba4f2eeb2b40c01e1f48"
-  integrity sha512-tBq/0elOa4rN6V8tsTjbPYmbTEdDEvZG6a2gM1sCAxkF1iBnr+fDBzHJWsMnRvm4yzrmmEQjF+hz31q9aqWLAw==
-  dependencies:
-    "@nju33/tsconfig-base" "^0.0.11"
-
-"@nju33/tsconfig-types@0.0.11":
-  version "0.0.11"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.11.tgz#d3b3d244f3cf70ca58c6e74cf113ae45bc58a143"
-  integrity sha512-a7T3802Zrt3m1gdJ+L2TxwT0vFCceRkDkwT/EHwwcl86AgRWrKqexKKVkCWCux7kHTp04AThKOoRt/cePANxhw==
-  dependencies:
-    "@nju33/tsconfig-base" "^0.0.11"
-
-"@nju33/tslint@0.0.18":
+"@nju33/tsconfig-types@0.0.18":
   version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@nju33/tslint/-/tslint-0.0.18.tgz#0b77a00c442ab403c105fed93dc65a8c09f49a7d"
-  integrity sha512-D9gtkcv6K3W1Y3IccHhHzo3Ary9f7bUqlwQkvcK+eoF7TgIzBZtf2IxZUJsz2bELUGh2FANn71swHvkizrWSeQ==
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.18.tgz#e68ef2ffb7123ac1f2915eb801f3c6ae4b83a914"
+  integrity sha512-wk02fqI+KdlStq6gNUwNcryVCUwnnqytJA4t+caUwRDCVqyKw2wj9jDRC5Pvdfa8hclaFQZ4ivnmewHijzdW9Q==
+  dependencies:
+    "@nju33/tsconfig-base" "^0.0.18"
+
+"@nju33/tslint@0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@nju33/tslint/-/tslint-0.0.24.tgz#8c8530d7999deb24848dc81a9c22e1093221abcc"
+  integrity sha512-XfFOpbnU9Oli4MHQzqjdQGbKXVUXNaJl9ejae6X7xvBV+1xP27+jF688vYM6hDzBV8CDZggnJtds9mykDhhS/A==
   dependencies:
     tslint-config-prettier "^1.17.0"
     tslint-xo "^0.16.0"
