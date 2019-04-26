@@ -48,6 +48,6 @@
     "prettier": "1.17.0",
     "renovate-config-nju33": "0.0.1",
     "tslint": "5.16.0",
-    "typescript": "3.4.4"
+    "typescript": "3.4.5"
   }
 }
