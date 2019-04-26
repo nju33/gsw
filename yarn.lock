@@ -1492,11 +1492,6 @@
   resolved "https://registry.yarnpkg.com/@nju33/prettier/-/prettier-0.0.7.tgz#d8f31fe1a4e774aa3c7b51a80cd1c2fa91224dd9"
   integrity sha512-t6geeZTQvbe150R9FZm9g6OCB5ay1toWzDdYV0WbZA9t3mEjlb4CpBLnUZoF5DScF+B5C7Qp1i6acjbgmWay7w==
 
-"@nju33/tsconfig-base@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.18.tgz#eaea7677f42906d21756068ca2efc52675740e71"
-  integrity sha512-aaXVs7cBFFJ0zPcfiyncqVTVCjMM6LZ54lw1SwWRakjUhU7nam5HhqrRQOXnIzosVq1wa07vjvCEZ19NsL2u7w==
-
 "@nju33/tsconfig-base@^0.0.24":
   version "0.0.24"
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.24.tgz#346529f75e1612bdc77ff24db9a058ea3701a732"
@@ -1509,19 +1504,19 @@
   dependencies:
     "@nju33/tsconfig-base" "^0.0.24"
 
-"@nju33/tsconfig-module@0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.18.tgz#a02c1a38bc6d0c21584e7d1ff43bfe68c807f000"
-  integrity sha512-hCLZzm9Vj2IWAaDjInGRkWvcGdGjR9NKEKEUI+rBEUvifroJApv9N17fqS2R94zAcMFPHPYz+Osd4/lKqRN6Cg==
+"@nju33/tsconfig-module@0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.24.tgz#4dda2061c77970737d608e885d55a90af1d375c9"
+  integrity sha512-7nBOlGQv9vIWUyng6BzzMxgsOwL7SOTZ0NtuqUYydisVauAzKMTDunssNiVol/6wQMUB3ZnfsMpClxJKg3wKtA==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.18"
+    "@nju33/tsconfig-base" "^0.0.24"
 
-"@nju33/tsconfig-types@0.0.18":
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.18.tgz#e68ef2ffb7123ac1f2915eb801f3c6ae4b83a914"
-  integrity sha512-wk02fqI+KdlStq6gNUwNcryVCUwnnqytJA4t+caUwRDCVqyKw2wj9jDRC5Pvdfa8hclaFQZ4ivnmewHijzdW9Q==
+"@nju33/tsconfig-types@0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.24.tgz#e5820c9de40046e97552ef4a6efd9e8382c472f2"
+  integrity sha512-9f1DqtOnO0QNzYBm8SH/BzWA7e3ZfQQs+FfVyddp17umzbWCjCEFfcQ5UmjYxuhEEmpVIUvr2eXmRD9iCp4Fpw==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.18"
+    "@nju33/tsconfig-base" "^0.0.24"
 
 "@nju33/tslint@0.0.24":
   version "0.0.24"
@@ -10302,10 +10297,10 @@ typescript@3.2.x:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.2.tgz#fe8101c46aa123f8353523ebdcf5730c2ae493e5"
   integrity sha512-VCj5UiSyHBjwfYacmDuc/NOk4QQixbE+Wn7MFJuS0nRuPQbof132Pw4u53dm264O8LPc2MVsc7RJNml5szurkg==
 
-typescript@3.4.4:
-  version "3.4.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.4.tgz#aac4a08abecab8091a75f10842ffa0631818f785"
-  integrity sha512-xt5RsIRCEaf6+j9AyOBgvVuAec0i92rgCaS3S+UVf5Z/vF2Hvtsw08wtUTJqp4djwznoAgjSxeCcU4r+CcDBJA==
+typescript@3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
+  integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
 
 uglify-js@^3.1.4:
   version "3.4.9"
