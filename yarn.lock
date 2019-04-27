@@ -1524,12 +1524,17 @@
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.24.tgz#346529f75e1612bdc77ff24db9a058ea3701a732"
   integrity sha512-BvbAJcXz/Pn9N3/CenLvsoZ/HFTrqaK4G6H8/76CZiHnrMAHC4XyuIkNRBd2TwZIepmETIq41EDMGV5REkaZ7Q==
 
-"@nju33/tsconfig-main@0.0.24":
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-main/-/tsconfig-main-0.0.24.tgz#d373ed1c547af3d5cef89621e3f5219947759fbd"
-  integrity sha512-Wn9efIZCiWqVROcFCKoDkuvsFNON2wHHtsQNS2AR4cbN2EP2L44326+QplnV5DBSZX/786hk/PgxV60JDTixWA==
+"@nju33/tsconfig-base@^0.0.25":
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.25.tgz#5d19817b0c0dd4f11477193ab7b5d3794215c96c"
+  integrity sha512-ZNQrqYPmuPRgI1m9s9ao+C9Wlt3il0lGLxRmGaBMWVGSfxDqm0M+kKXrWvyGeN8Y+I5JPefnEKQN3KCW+OoIuA==
+
+"@nju33/tsconfig-main@0.0.25":
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-main/-/tsconfig-main-0.0.25.tgz#b36c844a3801397aaaac07bd61393ae7d243ec8a"
+  integrity sha512-93bx2K8UL3wp0bLUEhDVkxJN4P777t/4rO83a/f4P8Hxh7pAx72m9rm/qj3B0qZ+devuxeMXBm87AEgyakOQIQ==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.24"
+    "@nju33/tsconfig-base" "^0.0.25"
 
 "@nju33/tsconfig-module@0.0.24":
   version "0.0.24"
@@ -1545,10 +1550,10 @@
   dependencies:
     "@nju33/tsconfig-base" "^0.0.24"
 
-"@nju33/tslint@0.0.24":
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/@nju33/tslint/-/tslint-0.0.24.tgz#8c8530d7999deb24848dc81a9c22e1093221abcc"
-  integrity sha512-XfFOpbnU9Oli4MHQzqjdQGbKXVUXNaJl9ejae6X7xvBV+1xP27+jF688vYM6hDzBV8CDZggnJtds9mykDhhS/A==
+"@nju33/tslint@0.0.25":
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/@nju33/tslint/-/tslint-0.0.25.tgz#f56548867f3b72a4d9054b66924d0f2e5ddac759"
+  integrity sha512-HElTMJYMPMnMdEbbayowuRHfxupktvk+zlOr+5vqFvD7mA6KI7O56zNzRI7q9RbPUt27EVSV3WmTsyYNDMvbSw==
   dependencies:
     tslint-config-prettier "^1.17.0"
     tslint-xo "^0.16.0"
