@@ -31,7 +31,7 @@
     "@geekcojp/tslint-config": "0.2.1",
     "@nju33/tsconfig-main": "0.0.25",
     "@nju33/tsconfig-module": "0.0.24",
-    "@nju33/tsconfig-types": "0.0.24",
+    "@nju33/tsconfig-types": "0.0.25",
     "@types/jest": "23.3.14",
     "coveralls": "^3.0.3",
     "jest": "23.6.0",
