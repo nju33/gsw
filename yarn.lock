@@ -1585,11 +1585,6 @@
   resolved "https://registry.yarnpkg.com/@nju33/prettier/-/prettier-0.0.7.tgz#d8f31fe1a4e774aa3c7b51a80cd1c2fa91224dd9"
   integrity sha512-t6geeZTQvbe150R9FZm9g6OCB5ay1toWzDdYV0WbZA9t3mEjlb4CpBLnUZoF5DScF+B5C7Qp1i6acjbgmWay7w==
 
-"@nju33/tsconfig-base@^0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.25.tgz#5d19817b0c0dd4f11477193ab7b5d3794215c96c"
-  integrity sha512-ZNQrqYPmuPRgI1m9s9ao+C9Wlt3il0lGLxRmGaBMWVGSfxDqm0M+kKXrWvyGeN8Y+I5JPefnEKQN3KCW+OoIuA==
-
 "@nju33/tsconfig-base@^0.0.26":
   version "0.0.26"
   resolved "https://registry.yarnpkg.com/@nju33/tsconfig-base/-/tsconfig-base-0.0.26.tgz#49bb979bc38607f483a8a08757066c80fed80794"
@@ -1602,19 +1597,19 @@
   dependencies:
     "@nju33/tsconfig-base" "^0.0.26"
 
-"@nju33/tsconfig-module@0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.25.tgz#dbb727e213fc256502a4d7697a6f9d406829b1a8"
-  integrity sha512-c938XcqAUpsdYbZFAqp9fGV055ZtOYHiE/FW/quKPmNiB4UsIA/zt0K/hyohvPz1ICYMbrCt7Wnhvz0FlSWBig==
+"@nju33/tsconfig-module@0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-module/-/tsconfig-module-0.0.26.tgz#736df11d7b76ff6fc84a1be9cf414b9adc92bea7"
+  integrity sha512-E2OPLHz4lun/qocTAaFx6AuuCJU96ti+9nqKajLXs+V3jQp3da/oGinBy/dNFcX1HtquKNX5KepY8pNuGy8Pyw==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.25"
+    "@nju33/tsconfig-base" "^0.0.26"
 
-"@nju33/tsconfig-types@0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.25.tgz#40e370d480529d98f80337a80d3ee06ed8567e58"
-  integrity sha512-s4H/kq6x6nbisVjbz5Ggs88FHcwtQRMmK6x0rG/oSKBb7ePhXqb8sSGx5iNCA3LPt5SGPchimGn5zWLrF/PkQw==
+"@nju33/tsconfig-types@0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@nju33/tsconfig-types/-/tsconfig-types-0.0.26.tgz#8f0e295800a27acef49515630babca9826187c70"
+  integrity sha512-FVtrukgPVQyEFQlUy7PJtjnbL1B/ol4EkyPoKO8pqLbUfgoLbnv1+v2LnhphlYu2Znn+/YEsdh9zxyKc1nk8Tw==
   dependencies:
-    "@nju33/tsconfig-base" "^0.0.25"
+    "@nju33/tsconfig-base" "^0.0.26"
 
 "@nju33/tslint@0.0.26":
   version "0.0.26"
@@ -8498,10 +8493,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@1.17.1:
-  version "1.17.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
-  integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
+prettier@1.18.2:
+  version "1.18.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.18.2.tgz#6823e7c5900017b4bd3acf46fe9ac4b4d7bda9ea"
+  integrity sha512-OeHeMc0JhFE9idD4ZdtNibzY0+TPHSpSSb9h8FqtP+YnoZZ1sl8Vc9b1sasjfymH3SonAF4QcA2+mzHPhMvIiw==
 
 pretty-format@^23.6.0:
   version "23.6.0"
