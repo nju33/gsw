@@ -30,7 +30,7 @@
     "test": "lerna exec -- yarn test"
   },
   "devDependencies": {
-    "@nju33/prettier": "0.0.7",
+    "@nju33/prettier": "0.0.26",
     "@nju33/tslint": "0.0.26",
     "@types/jest": "23.3.14",
     "@typescript-eslint/eslint-plugin": "1.6.0",
