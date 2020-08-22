@@ -34,7 +34,7 @@
     "@nju33/tsconfig-types": "0.0.26",
     "@types/jest": "23.3.14",
     "coveralls": "3.1.0",
-    "jest": "23.6.0",
+    "jest": "26.4.2",
     "lerna": "3.22.1",
     "prettier": "1.19.1",
     "renovate-config-nju33": "0.0.1",
